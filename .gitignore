@@ -2,6 +2,11 @@
 
 # README
 README
+
+# Excel
+*.csv
+*.xls
+
 # Prerequisites
 *.d
 
