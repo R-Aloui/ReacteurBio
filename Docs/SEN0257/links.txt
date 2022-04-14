@@ -1,0 +1,5 @@
+datasheet
+https://wiki.dfrobot.com/Gravity__Water_Pressure_Sensor_SKU__SEN0257
+
+Reading analog signal problem with esp32
+https://www.dfrobot.com/forum/viewtopic.php?t=27688
