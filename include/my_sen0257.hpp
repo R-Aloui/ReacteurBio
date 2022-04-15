@@ -1,8 +1,11 @@
 #pragma once
 
-#define max(x, y) ((x > y) ? x : y)
-#define min(x, y) ((x < y) ? x : y)
-#define CALIBRATION_SAMPLES     50
+#ifdef ESP32ENV
+  #define min(a,b) ((a)<(b)?(a):(b))
+  #define max(a,b) ((a)>(b)?(a):(b))
+#endif
+
+#define CALIBRATION_SAMPLES     500
 
 
 class MY_SEN0257

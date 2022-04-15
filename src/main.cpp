@@ -10,8 +10,6 @@ void setup()
 {
   Serial.begin(9600);
   s1.calibration();
-  //sen0257calibration();
-  // pinMode(pinPressureSensor, INPUT_PULLDOWN);
 }
 
 void loop()
