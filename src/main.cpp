@@ -3,8 +3,14 @@
 // So the coversion should be voltage.v =  analogRead(pin) / 1024.00.
 #include <Arduino.h>
 #include "my_sen0257.cpp"
+#include "common.hpp"
 
-MY_SEN0257 s1(35);
+#ifdef ESP32ENV
+  MY_SEN0257 s1(35);
+#else
+  MY_SEN0257 s1(A0);
+#endif
+
 
 void setup()
 {
@@ -14,6 +20,6 @@ void setup()
 
 void loop()
 {
-  Serial.printf("Pressure = %10.3f kPa\n", s1.getPressure());
+  MY_PRINT("Pressure = %10.3f kPa\n", s1.getPressure());
   delay(2000);
 }

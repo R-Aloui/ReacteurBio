@@ -1,12 +1,11 @@
 #pragma once
 
+#define CALIBRATION_SAMPLES     100
 #ifdef ESP32ENV
-  #define min(a,b) ((a)<(b)?(a):(b))
-  #define max(a,b) ((a)>(b)?(a):(b))
+  #define num2volt(x) (float) (x) / 1024.00
+#else
+  #define num2volt(x) (float) (x) * 5/ 1024.00
 #endif
-
-#define CALIBRATION_SAMPLES     500
-
 
 class MY_SEN0257
 {
