@@ -1,3 +1,7 @@
+# Ignore files
+zzz*
+
+# PIO
 .pio
 
 # README
