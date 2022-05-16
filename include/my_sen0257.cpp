@@ -61,3 +61,6 @@ float MY_SEN0257::getPressure()
 
   return pressure;
 }
+void MY_SEN0257::setOffeset(float o){
+  offset = o;
+}

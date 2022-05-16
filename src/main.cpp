@@ -15,8 +15,10 @@
 void setup()
 {
   Serial.begin(9600);
-  s1.calibration();
+  // s1.calibration();
+  s1.setOffeset(0.483);
 }
+
 
 void loop()
 {

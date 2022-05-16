@@ -23,4 +23,5 @@ public:
   MY_SEN0257(int);
   void calibration();
   float getPressure();
+  void setOffeset(float);
 };
