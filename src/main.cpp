@@ -1,8 +1,8 @@
 #include <Arduino.h>
 
 void setup(){
-  Serial.begin(115200);
-  Serial.printf("Bonjour");
+  Serial.begin(57600);
+  Serial.print("Bonjour\n");
 }
 
 void loop(){
