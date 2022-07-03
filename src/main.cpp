@@ -14,7 +14,7 @@ void setup(){
     sensors[i].setOffeset(0.474);
   }
   MY_PRINT("Starting readings ...\n");
-  MY_PRINT("nb\tp0\tp1\tp2\tp3\tdp0\tdp1");
+  MY_PRINT("nb,\tp0,\tp1,\tp2,\tp3,\tdp0,\tdp1\n");
 }
 
 void loop(){
