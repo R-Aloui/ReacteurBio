@@ -1,6 +1,6 @@
 #pragma once
 
-#define CALIBRATION_SAMPLES     100
+#define CALIBRATION_SAMPLES     40
 #ifdef ESP32ENV
   #define num2volt(x) (float) (x) / 1024.00
 #else
